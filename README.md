@@ -12,6 +12,9 @@ Gatsby plugin: gatsby-source-wordpress
 
 1. Include the .php file into your WP functions.php to create a custom endpoint. Once this is done you should be able to see the json output at "/wp-json/wp/v1/searchResults".
 
+## PS . I had to add "**/search", to included routes so that we could pick up allWordpressWpSearch in GraphQL Query
+
+
 2. Add the SearchComponent.js to your Gatsby project
 
 3. Import the component and style it. Right now I'm using emotion css but you can style it however you want.
